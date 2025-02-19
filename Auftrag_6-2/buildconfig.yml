@@ -25,8 +25,8 @@ spec:
   source:
     type: Git
     git:
-      contextDir: /html
-      uri: 'https://github.com/Gabrielelogiurato/uek-210'
+      uri: 'https://github.com/Gabrielelogiurato/uek-210.git'
+      contextDir: /Auftrag_6-2/html
     sourceSecret:
       name: html-openshift-app-github
   triggers:
