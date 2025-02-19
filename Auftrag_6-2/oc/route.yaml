@@ -10,7 +10,7 @@ spec:
     kind: Service
     name: html-openshift-app
   port:
-    targetPort: http
+    targetPort: html-openshift-app
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect

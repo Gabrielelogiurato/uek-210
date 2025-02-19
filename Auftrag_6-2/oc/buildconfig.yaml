@@ -25,16 +25,16 @@ spec:
   source:
     type: Git
     git:
-      uri: 'https://github.com/gabrielelogiurato/uek-210.git'
+      uri: 'https://github.com/Gabrielelogiurato/uek-210.git'
       contextDir: /Auftrag_6-2/html
     sourceSecret:
       name: html-openshift-app-github
   triggers:
-    - type: Generic
-      generic:
-        secretReference:
-          name: html-openshift-app-generic-webhook-secret
-    - type: ImageChange
-      imageChange: {}
-    - type: ConfigChange
+  - type: Generic
+    generic:
+      secretReference:
+        name: html-openshift-app-generic-webhook-secret
+  - type: ImageChange
+    imageChange: {}
+  - type: ConfigChange
   runPolicy: Serial
